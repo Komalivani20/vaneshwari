@@ -1,0 +1,606 @@
+{
+  "eval_cases": [
+    {
+      "prompt": {
+        "parts": [
+          {
+            "text": "Hello, what can you help me with?"
+          }
+        ],
+        "role": "user"
+      },
+      "responses": [
+        {
+          "response": {
+            "parts": [
+              {
+                "text": "Hello! I am an AI assistant and I can help you with a variety of tasks.\n\nFor example, I can:\n\n*   **Provide Information:** Answer questions about general knowledge.\n*   **Perform Calculations:** I can evaluate basic mathematical expressions like `12 * 4` or `100 / 5`.\n*   **Give you the weather:** I can look up the weather for a specific location.\n*   **Tell you the time:** I can tell you the current time for a given city.\n*   **Convert Temperatures:** I can convert temperatures from Celsius to Fahrenheit.\n\nHow can I help you today?"
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ],
+      "eval_case_id": "greeting",
+      "agent_data": {
+        "agents": {
+          "root_agent": {
+            "agent_id": "root_agent",
+            "agent_type": "LlmAgent",
+            "description": "",
+            "instruction": "You are a helpful AI assistant designed to provide accurate and useful information.",
+            "tools": [
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates a web search. Use it get information on weather.\n\nArgs:\n    query: A string containing the location to get weather information for.\n\nReturns:\n    A string with the simulated weather information for the queried location.",
+                    "name": "get_weather",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates getting the current time for a city.\n\nArgs:\n    city: The name of the city to get the current time for.\n\nReturns:\n    A string with the current time information.",
+                    "name": "get_current_time",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Converts a temperature from Celsius to Fahrenheit.\n\nArgs:\n    celsius: Temperature value in Celsius.\n\nReturns:\n    A string displaying the temperature in Fahrenheit.",
+                    "name": "convert_celsius_to_fahrenheit",
+                    "parameters": {
+                      "properties": {
+                        "celsius": {
+                          "type": "NUMBER"
+                        }
+                      },
+                      "required": [
+                        "celsius"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Evaluates a basic mathematical expression (addition, subtraction, multiplication, division).\n\nArgs:\n    expression: A mathematical expression string, e.g., '12 * 4' or '100 / 5'.\n\nReturns:\n    The numerical result of the calculation as a string.",
+                    "name": "calculate_expression",
+                    "parameters": {
+                      "properties": {
+                        "expression": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "expression"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sub_agents": []
+          }
+        },
+        "turns": [
+          {
+            "turn_index": 0,
+            "turn_id": "turn_0",
+            "events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "Hello! I am an AI assistant and I can help you with a variety of tasks.\n\nFor example, I can:\n\n*   **Provide Information:** Answer questions about general knowledge.\n*   **Perform Calculations:** I can evaluate basic mathematical expressions like `12 * 4` or `100 / 5`.\n*   **Give you the weather:** I can look up the weather for a specific location.\n*   **Tell you the time:** I can tell you the current time for a given city.\n*   **Convert Temperatures:** I can convert temperatures from Celsius to Fahrenheit.\n\nHow can I help you today?"
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "prompt": {
+        "parts": [
+          {
+            "text": "What's the weather like in San Francisco?"
+          }
+        ],
+        "role": "user"
+      },
+      "responses": [
+        {
+          "response": {
+            "parts": [
+              {
+                "text": "It's 60 degrees and foggy."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ],
+      "eval_case_id": "weather_query",
+      "agent_data": {
+        "agents": {
+          "root_agent": {
+            "agent_id": "root_agent",
+            "agent_type": "LlmAgent",
+            "description": "",
+            "instruction": "You are a helpful AI assistant designed to provide accurate and useful information.",
+            "tools": [
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates a web search. Use it get information on weather.\n\nArgs:\n    query: A string containing the location to get weather information for.\n\nReturns:\n    A string with the simulated weather information for the queried location.",
+                    "name": "get_weather",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates getting the current time for a city.\n\nArgs:\n    city: The name of the city to get the current time for.\n\nReturns:\n    A string with the current time information.",
+                    "name": "get_current_time",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Converts a temperature from Celsius to Fahrenheit.\n\nArgs:\n    celsius: Temperature value in Celsius.\n\nReturns:\n    A string displaying the temperature in Fahrenheit.",
+                    "name": "convert_celsius_to_fahrenheit",
+                    "parameters": {
+                      "properties": {
+                        "celsius": {
+                          "type": "NUMBER"
+                        }
+                      },
+                      "required": [
+                        "celsius"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Evaluates a basic mathematical expression (addition, subtraction, multiplication, division).\n\nArgs:\n    expression: A mathematical expression string, e.g., '12 * 4' or '100 / 5'.\n\nReturns:\n    The numerical result of the calculation as a string.",
+                    "name": "calculate_expression",
+                    "parameters": {
+                      "properties": {
+                        "expression": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "expression"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sub_agents": []
+          }
+        },
+        "turns": [
+          {
+            "turn_index": 0,
+            "turn_id": "turn_0",
+            "events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-3bf3bc24-2ed6-4202-9f50-767518c4e512",
+                        "args": {
+                          "query": "San Francisco"
+                        },
+                        "name": "get_weather"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-3bf3bc24-2ed6-4202-9f50-767518c4e512",
+                        "name": "get_weather",
+                        "response": {
+                          "result": "It's 60 degrees and foggy."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "It's 60 degrees and foggy."
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "prompt": {
+        "parts": [
+          {
+            "text": "What is the capital of France?"
+          }
+        ],
+        "role": "user"
+      },
+      "responses": [
+        {
+          "response": {
+            "parts": [
+              {
+                "text": "The capital of France is Paris."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ],
+      "reference": {
+        "response": {
+          "parts": [
+            {
+              "text": "The capital of France is Paris."
+            }
+          ],
+          "role": "model"
+        }
+      },
+      "eval_case_id": "capital_lookup",
+      "agent_data": {
+        "agents": {
+          "root_agent": {
+            "agent_id": "root_agent",
+            "agent_type": "LlmAgent",
+            "description": "",
+            "instruction": "You are a helpful AI assistant designed to provide accurate and useful information.",
+            "tools": [
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates a web search. Use it get information on weather.\n\nArgs:\n    query: A string containing the location to get weather information for.\n\nReturns:\n    A string with the simulated weather information for the queried location.",
+                    "name": "get_weather",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates getting the current time for a city.\n\nArgs:\n    city: The name of the city to get the current time for.\n\nReturns:\n    A string with the current time information.",
+                    "name": "get_current_time",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Converts a temperature from Celsius to Fahrenheit.\n\nArgs:\n    celsius: Temperature value in Celsius.\n\nReturns:\n    A string displaying the temperature in Fahrenheit.",
+                    "name": "convert_celsius_to_fahrenheit",
+                    "parameters": {
+                      "properties": {
+                        "celsius": {
+                          "type": "NUMBER"
+                        }
+                      },
+                      "required": [
+                        "celsius"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Evaluates a basic mathematical expression (addition, subtraction, multiplication, division).\n\nArgs:\n    expression: A mathematical expression string, e.g., '12 * 4' or '100 / 5'.\n\nReturns:\n    The numerical result of the calculation as a string.",
+                    "name": "calculate_expression",
+                    "parameters": {
+                      "properties": {
+                        "expression": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "expression"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sub_agents": []
+          }
+        },
+        "turns": [
+          {
+            "turn_index": 0,
+            "turn_id": "turn_0",
+            "events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "The capital of France is Paris."
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "prompt": {
+        "parts": [
+          {
+            "text": "Convert 25 Celsius to Fahrenheit"
+          }
+        ],
+        "role": "user"
+      },
+      "responses": [
+        {
+          "response": {
+            "parts": [
+              {
+                "text": "25°C is equal to 77.0°F."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ],
+      "eval_case_id": "temp_conversion",
+      "agent_data": {
+        "agents": {
+          "root_agent": {
+            "agent_id": "root_agent",
+            "agent_type": "LlmAgent",
+            "description": "",
+            "instruction": "You are a helpful AI assistant designed to provide accurate and useful information.",
+            "tools": [
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates a web search. Use it get information on weather.\n\nArgs:\n    query: A string containing the location to get weather information for.\n\nReturns:\n    A string with the simulated weather information for the queried location.",
+                    "name": "get_weather",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Simulates getting the current time for a city.\n\nArgs:\n    city: The name of the city to get the current time for.\n\nReturns:\n    A string with the current time information.",
+                    "name": "get_current_time",
+                    "parameters": {
+                      "properties": {
+                        "query": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "query"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Converts a temperature from Celsius to Fahrenheit.\n\nArgs:\n    celsius: Temperature value in Celsius.\n\nReturns:\n    A string displaying the temperature in Fahrenheit.",
+                    "name": "convert_celsius_to_fahrenheit",
+                    "parameters": {
+                      "properties": {
+                        "celsius": {
+                          "type": "NUMBER"
+                        }
+                      },
+                      "required": [
+                        "celsius"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              },
+              {
+                "function_declarations": [
+                  {
+                    "description": "Evaluates a basic mathematical expression (addition, subtraction, multiplication, division).\n\nArgs:\n    expression: A mathematical expression string, e.g., '12 * 4' or '100 / 5'.\n\nReturns:\n    The numerical result of the calculation as a string.",
+                    "name": "calculate_expression",
+                    "parameters": {
+                      "properties": {
+                        "expression": {
+                          "type": "STRING"
+                        }
+                      },
+                      "required": [
+                        "expression"
+                      ],
+                      "type": "OBJECT"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sub_agents": []
+          }
+        },
+        "turns": [
+          {
+            "turn_index": 0,
+            "turn_id": "turn_0",
+            "events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-49620c97-975c-4908-86b1-39bd0bab6d5f",
+                        "args": {
+                          "celsius": 25
+                        },
+                        "name": "convert_celsius_to_fahrenheit"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-49620c97-975c-4908-86b1-39bd0bab6d5f",
+                        "name": "convert_celsius_to_fahrenheit",
+                        "response": {
+                          "result": "25°C is equal to 77.0°F."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "25°C is equal to 77.0°F."
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

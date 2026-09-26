@@ -1,0 +1,1283 @@
+=== Starting server at 2026-09-26T10:28:21.715507+00:00 ===
+Command: /config/Desktop/Session1/simple-agent/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/simple-agent
+=== Started server process 7270 ===
+2026-09-26 10:28:25,881 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 10:28:25,883 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/simple-agent
+2026-09-26 10:28:25,884 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/simple-agent
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [7270]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:42846 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 10:28:26,679 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/simple-agent/app/.adk/session.db
+2026-09-26 10:28:26,715 - INFO - api_server.py:1193 - New session created: f9a4037c-ce89-4f44-adbb-752a48388274
+INFO:     127.0.0.1:42854 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 10:28:26,737 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/simple-agent/.env
+INFO:     127.0.0.1:42860 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 10:28:28,072 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 10:28:29,583 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 10:28:29,614 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 10:28:30,236 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 10:28:30,399 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 10:28:30,400 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7270]
+=== Starting server at 2026-09-26T10:28:32.922391+00:00 ===
+Command: /config/Desktop/Session1/simple-agent/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/simple-agent
+=== Started server process 7332 ===
+2026-09-26 10:28:34,727 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 10:28:34,728 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/simple-agent
+2026-09-26 10:28:34,728 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/simple-agent
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [7332]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60498 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 10:28:35,356 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/simple-agent/app/.adk/session.db
+2026-09-26 10:28:35,368 - INFO - api_server.py:1193 - New session created: 88a06f71-7425-4065-9fac-997f0d1ab588
+INFO:     127.0.0.1:60504 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 10:28:35,384 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/simple-agent/.env
+INFO:     127.0.0.1:60510 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 10:28:35,936 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 10:28:37,450 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 10:28:37,480 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 10:28:38,324 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 10:28:38,468 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 10:28:38,468 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7332]
+=== Starting server at 2026-09-26T10:30:19.801053+00:00 ===
+Command: /config/Desktop/Session1/simple-agent/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/simple-agent
+=== Started server process 7854 ===
+2026-09-26 10:30:21,586 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 10:30:21,586 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/simple-agent
+2026-09-26 10:30:21,587 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/simple-agent
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [7854]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:42264 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 10:30:22,234 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/simple-agent/app/.adk/session.db
+2026-09-26 10:30:22,245 - INFO - api_server.py:1193 - New session created: f60b7bac-25c5-4d48-9472-5d87f3fe3e72
+INFO:     127.0.0.1:42274 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 10:30:22,260 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/simple-agent/.env
+INFO:     127.0.0.1:42282 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 10:30:22,788 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 10:30:23,823 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 10:30:23,852 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 10:30:25,193 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 10:30:25,413 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 10:30:25,414 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7854]
+=== Starting server at 2026-09-26T11:00:04.927353+00:00 ===
+Command: /config/Desktop/Session1/simple-agent/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/simple-agent
+=== Started server process 16557 ===
+2026-09-26 11:00:06,787 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:00:06,788 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/simple-agent
+2026-09-26 11:00:06,788 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/simple-agent
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [16557]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:45604 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:00:07,361 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/simple-agent/app/.adk/session.db
+2026-09-26 11:00:07,373 - INFO - api_server.py:1193 - New session created: 7a7645eb-fad2-414e-9f30-5bc37bfd420f
+INFO:     127.0.0.1:45606 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:00:07,391 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/simple-agent/.env
+INFO:     127.0.0.1:45608 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:00:07,965 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:00:09,084 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:00:09,116 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:00:10,008 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:00:10,198 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:00:10,199 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16557]
+=== Starting server at 2026-09-26T11:00:15.929838+00:00 ===
+Command: /config/Desktop/Session1/simple-agent/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/simple-agent
+=== Started server process 16625 ===
+2026-09-26 11:00:17,779 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:00:17,780 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/simple-agent
+2026-09-26 11:00:17,780 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/simple-agent
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [16625]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:43006 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:00:18,363 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/simple-agent/app/.adk/session.db
+2026-09-26 11:00:18,375 - INFO - api_server.py:1193 - New session created: a675c8df-a775-43ce-820b-c1e0dba69ab0
+INFO:     127.0.0.1:43010 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:00:18,391 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/simple-agent/.env
+INFO:     127.0.0.1:43020 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:00:18,951 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:00:19,877 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:00:19,910 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:00:20,689 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:00:20,891 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:00:20,891 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16625]
+=== Starting server at 2026-09-26T11:00:23.732254+00:00 ===
+Command: /config/Desktop/Session1/simple-agent/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/simple-agent
+=== Started server process 16671 ===
+2026-09-26 11:00:25,531 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:00:25,531 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/simple-agent
+2026-09-26 11:00:25,532 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/simple-agent
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [16671]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36938 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:00:26,165 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/simple-agent/app/.adk/session.db
+2026-09-26 11:00:26,178 - INFO - api_server.py:1193 - New session created: 3653e11e-dd7b-4be4-8adb-a7d5f454ac3d
+INFO:     127.0.0.1:36952 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:00:26,197 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/simple-agent/.env
+INFO:     127.0.0.1:36958 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:00:26,769 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:00:28,044 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:00:28,073 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:00:28,810 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:00:28,992 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:00:28,993 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16671]
+=== Starting server at 2026-09-26T11:07:14.934642+00:00 ===
+Command: /config/Desktop/Session1/simple-agent/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/simple-agent
+=== Started server process 18507 ===
+2026-09-26 11:07:16,796 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:07:16,797 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/simple-agent
+2026-09-26 11:07:16,798 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/simple-agent
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [18507]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:39420 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:07:17,367 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/simple-agent/app/.adk/session.db
+2026-09-26 11:07:17,384 - INFO - api_server.py:1193 - New session created: 6d6bd922-a180-4cfb-91b2-26d3bd2d61ca
+INFO:     127.0.0.1:39434 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:07:17,400 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/simple-agent/.env
+INFO:     127.0.0.1:39444 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/simple-agent/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:07:19,644 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:07:21,120 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:07:21,152 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:07:22,089 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:07:22,277 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:07:22,277 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18507]
+=== Starting server at 2026-09-26T11:27:43.660219+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Starting server at 2026-09-26T11:27:49.404623+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Started server process 24753 ===
+2026-09-26 11:27:53,339 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:27:53,342 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/server-incident-triage
+2026-09-26 11:27:53,342 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/server-incident-triage
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [24753]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55444 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:27:54,262 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/server-incident-triage/app/.adk/session.db
+2026-09-26 11:27:54,272 - INFO - api_server.py:1193 - New session created: d1dfa4df-cea7-46ac-b006-b1f1bdaef249
+INFO:     127.0.0.1:55452 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:27:54,288 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/server-incident-triage/.env
+INFO:     127.0.0.1:55460 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:27:59,003 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:27:59,966 - INFO - google_llm.py:359 - Response received from the model.
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/base_collection.py:317: UserWarning: Detected filter using positional arguments. Prefer using the 'filter' keyword argument instead.
+  return query.where(field_path, op_string, value)
+2026-09-26 11:28:00,609 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:28:02,173 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:28:02,310 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:28:02,310 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24753]
+=== Starting server at 2026-09-26T11:28:04.405887+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18081 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Started server process 24846 ===
+2026-09-26 11:28:06,214 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:28:06,215 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/server-incident-triage
+2026-09-26 11:28:06,215 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/server-incident-triage
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [24846]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18081 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46964 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:28:06,839 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/server-incident-triage/app/.adk/session.db
+2026-09-26 11:28:06,851 - INFO - api_server.py:1193 - New session created: 0add3fe4-f502-415d-a744-b11f6677c4fe
+INFO:     127.0.0.1:46980 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:28:06,868 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/server-incident-triage/.env
+INFO:     127.0.0.1:46994 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:28:09,251 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:28:10,986 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:28:11,683 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:28:12,468 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:28:12,679 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:28:12,679 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24846]
+=== Starting server at 2026-09-26T11:34:50.061478+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Started server process 26691 ===
+2026-09-26 11:34:51,961 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:34:51,962 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/server-incident-triage
+2026-09-26 11:34:51,962 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/server-incident-triage
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [26691]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:48228 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:34:52,495 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/server-incident-triage/app/.adk/session.db
+2026-09-26 11:34:52,510 - INFO - api_server.py:1193 - New session created: 84f70fdb-aa9b-4eba-b98d-0554a741a318
+INFO:     127.0.0.1:48238 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:34:52,526 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/server-incident-triage/.env
+INFO:     127.0.0.1:48254 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:34:54,934 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:34:56,506 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:34:56,536 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:34:57,673 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:34:57,698 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:35:00,017 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:35:00,172 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:35:00,172 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26691]
+=== Starting server at 2026-09-26T11:38:03.223420+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Started server process 27529 ===
+2026-09-26 11:38:05,100 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:38:05,101 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/server-incident-triage
+2026-09-26 11:38:05,101 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/server-incident-triage
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [27529]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60296 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:38:05,657 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/server-incident-triage/app/.adk/session.db
+2026-09-26 11:38:05,668 - INFO - api_server.py:1193 - New session created: 23cff2b0-c8f8-44bd-bafb-04508e760c04
+INFO:     127.0.0.1:60298 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:38:05,685 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/server-incident-triage/.env
+INFO:     127.0.0.1:60312 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:38:08,136 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:38:08,894 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:38:08,927 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:38:09,880 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:38:10,066 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:38:10,066 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27529]
+=== Starting server at 2026-09-26T11:38:57.974984+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Started server process 27785 ===
+2026-09-26 11:38:59,818 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:38:59,819 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/server-incident-triage
+2026-09-26 11:38:59,820 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/server-incident-triage
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [27785]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52516 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:39:00,408 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/server-incident-triage/app/.adk/session.db
+2026-09-26 11:39:00,421 - INFO - api_server.py:1193 - New session created: bd6a700a-943d-4532-ad10-0c6c44bea651
+INFO:     127.0.0.1:52530 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:39:00,438 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/server-incident-triage/.env
+INFO:     127.0.0.1:52534 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:39:02,837 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:39:04,124 - INFO - google_llm.py:359 - Response received from the model.
+2026-09-26 11:39:04,184 - INFO - google_llm.py:262 - Sending out request, model: gemini-flash-latest, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2026-09-26 11:39:05,375 - INFO - google_llm.py:359 - Response received from the model.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:39:05,579 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:39:05,580 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27785]
+=== Starting server at 2026-09-26T11:40:02.352348+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Started server process 28092 ===
+2026-09-26 11:40:04,154 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:40:04,155 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/server-incident-triage
+2026-09-26 11:40:04,155 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/server-incident-triage
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [28092]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:40426 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:40:04,784 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/server-incident-triage/app/.adk/session.db
+2026-09-26 11:40:04,796 - INFO - api_server.py:1193 - New session created: 64f587d8-1768-4aa0-8155-aecceece295b
+INFO:     127.0.0.1:40434 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:40:04,811 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/server-incident-triage/.env
+INFO:     127.0.0.1:40442 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:40:07,122 - ERROR - _node_runner.py:161 - Node execution failed with exception
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 304, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 318, in _run_node_loop
+    async for event in agen:
+      self._track_event_in_context(event, ctx)
+      await self._enqueue_event(event, ctx)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_llm_agent_wrapper.py", line 482, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 359, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 437, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 629, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 284, in call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 248, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 679, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 331, in run_and_handle_error
+    raise model_error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 308, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 239, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 655, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/config/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/functools.py", line 1025, in __get__
+    val = self.func(instance)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 464, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 203, in __get__
+    return per_loop_value(
+        instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 164, in per_loop_value
+    return cache.get(build)
+           ~~~~~~~~~^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 131, in get
+    built = build()
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 204, in <lambda>
+    instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+                                                    ~~~~~~~~~^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 458, in api_client
+    return Client(**kwargs)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 422, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=resolved_vertexai,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 477, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 834, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+2026-09-26 11:40:07,142 - ERROR - runners.py:823 - Root node root_agent failed.
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 241, in _drive_root_node
+    await root_ctx._run_node_internal(  # pylint: disable=protected-access
+    ...<3 lines>...
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/context.py", line 515, in _run_node_internal
+    return await _dynamic_node_scheduler.run_node_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<12 lines>...
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_dynamic_node_scheduler.py", line 738, in run_node_internal
+    raise DynamicNodeFailError(
+    ...<3 lines>...
+    )
+google.adk.workflow._errors.DynamicNodeFailError: Dynamic node root_agent failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 812, in _cleanup_root_task
+    await task
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 250, in _drive_root_node
+    raise e.error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 304, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 318, in _run_node_loop
+    async for event in agen:
+      self._track_event_in_context(event, ctx)
+      await self._enqueue_event(event, ctx)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_llm_agent_wrapper.py", line 482, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 359, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 437, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 629, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 284, in call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 248, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 679, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 331, in run_and_handle_error
+    raise model_error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 308, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 239, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 655, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/config/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/functools.py", line 1025, in __get__
+    val = self.func(instance)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 464, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 203, in __get__
+    return per_loop_value(
+        instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 164, in per_loop_value
+    return cache.get(build)
+           ~~~~~~~~~^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 131, in get
+    built = build()
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 204, in <lambda>
+    instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+                                                    ~~~~~~~~~^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 458, in api_client
+    return Client(**kwargs)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 422, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=resolved_vertexai,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 477, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 834, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+2026-09-26 11:40:07,159 - ERROR - api_server.py:2089 - Error in event_generator: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 241, in _drive_root_node
+    await root_ctx._run_node_internal(  # pylint: disable=protected-access
+    ...<3 lines>...
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/context.py", line 515, in _run_node_internal
+    return await _dynamic_node_scheduler.run_node_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<12 lines>...
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_dynamic_node_scheduler.py", line 738, in run_node_internal
+    raise DynamicNodeFailError(
+    ...<3 lines>...
+    )
+google.adk.workflow._errors.DynamicNodeFailError: Dynamic node root_agent failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/api_server.py", line 2049, in event_generator
+    async for event in agen:
+    ...<25 lines>...
+        yield f"data: {sse_event}\n\n"
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 1147, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 574, in _run_node_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 304, in run_node_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 274, in _run
+    await runner._cleanup_root_task(task, runner.agent.name)  # pylint: disable=protected-access
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 812, in _cleanup_root_task
+    await task
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 250, in _drive_root_node
+    raise e.error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 304, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 318, in _run_node_loop
+    async for event in agen:
+      self._track_event_in_context(event, ctx)
+      await self._enqueue_event(event, ctx)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_llm_agent_wrapper.py", line 482, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 359, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 437, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 629, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 284, in call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 248, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 679, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 331, in run_and_handle_error
+    raise model_error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 308, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 239, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 655, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/config/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/functools.py", line 1025, in __get__
+    val = self.func(instance)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 464, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 203, in __get__
+    return per_loop_value(
+        instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 164, in per_loop_value
+    return cache.get(build)
+           ~~~~~~~~~^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 131, in get
+    built = build()
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 204, in <lambda>
+    instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+                                                    ~~~~~~~~~^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 458, in api_client
+    return Client(**kwargs)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 422, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=resolved_vertexai,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 477, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 834, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:40:07,374 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:40:07,375 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28092]
+=== Starting server at 2026-09-26T11:40:09.865472+00:00 ===
+Command: /config/Desktop/Session1/server-incident-triage/.venv/bin/adk api_server --host 127.0.0.1 --port 18080 --reload_agents --no-reload .
+CWD: /config/Desktop/Session1/server-incident-triage
+=== Started server process 28133 ===
+2026-09-26 11:40:11,710 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-09-26 11:40:11,711 - INFO - local_storage.py:89 - Using per-agent session storage rooted at /config/Desktop/Session1/server-incident-triage
+2026-09-26 11:40:11,712 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at /config/Desktop/Session1/server-incident-triage
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/fast_api.py:278: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [28133]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:32898 - "GET / HTTP/1.1" 404 Not Found
+2026-09-26 11:40:12,298 - INFO - local_storage.py:65 - Creating local session service at /config/Desktop/Session1/server-incident-triage/app/.adk/session.db
+2026-09-26 11:40:12,312 - INFO - api_server.py:1193 - New session created: 39f779cd-1ff6-4057-961d-4ba44cfa331b
+INFO:     127.0.0.1:32908 - "POST /apps/app/users/cli-user/sessions HTTP/1.1" 200 OK
+2026-09-26 11:40:12,335 - INFO - envs.py:83 - Loaded .env file for app at /config/Desktop/Session1/server-incident-triage/.env
+INFO:     127.0.0.1:32916 - "POST /run_sse HTTP/1.1" 200 OK
+/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-09-26 11:40:14,740 - ERROR - _node_runner.py:161 - Node execution failed with exception
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 304, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 318, in _run_node_loop
+    async for event in agen:
+      self._track_event_in_context(event, ctx)
+      await self._enqueue_event(event, ctx)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_llm_agent_wrapper.py", line 482, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 359, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 437, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 629, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 284, in call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 248, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 679, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 331, in run_and_handle_error
+    raise model_error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 308, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 239, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 655, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/config/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/functools.py", line 1025, in __get__
+    val = self.func(instance)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 464, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 203, in __get__
+    return per_loop_value(
+        instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 164, in per_loop_value
+    return cache.get(build)
+           ~~~~~~~~~^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 131, in get
+    built = build()
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 204, in <lambda>
+    instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+                                                    ~~~~~~~~~^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 458, in api_client
+    return Client(**kwargs)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 422, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=resolved_vertexai,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 477, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 834, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+2026-09-26 11:40:14,759 - ERROR - runners.py:823 - Root node root_agent failed.
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 241, in _drive_root_node
+    await root_ctx._run_node_internal(  # pylint: disable=protected-access
+    ...<3 lines>...
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/context.py", line 515, in _run_node_internal
+    return await _dynamic_node_scheduler.run_node_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<12 lines>...
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_dynamic_node_scheduler.py", line 738, in run_node_internal
+    raise DynamicNodeFailError(
+    ...<3 lines>...
+    )
+google.adk.workflow._errors.DynamicNodeFailError: Dynamic node root_agent failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 812, in _cleanup_root_task
+    await task
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 250, in _drive_root_node
+    raise e.error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 304, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 318, in _run_node_loop
+    async for event in agen:
+      self._track_event_in_context(event, ctx)
+      await self._enqueue_event(event, ctx)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_llm_agent_wrapper.py", line 482, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 359, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 437, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 629, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 284, in call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 248, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 679, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 331, in run_and_handle_error
+    raise model_error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 308, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 239, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 655, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/config/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/functools.py", line 1025, in __get__
+    val = self.func(instance)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 464, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 203, in __get__
+    return per_loop_value(
+        instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 164, in per_loop_value
+    return cache.get(build)
+           ~~~~~~~~~^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 131, in get
+    built = build()
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 204, in <lambda>
+    instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+                                                    ~~~~~~~~~^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 458, in api_client
+    return Client(**kwargs)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 422, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=resolved_vertexai,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 477, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 834, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+2026-09-26 11:40:14,777 - ERROR - api_server.py:2089 - Error in event_generator: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 241, in _drive_root_node
+    await root_ctx._run_node_internal(  # pylint: disable=protected-access
+    ...<3 lines>...
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/context.py", line 515, in _run_node_internal
+    return await _dynamic_node_scheduler.run_node_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<12 lines>...
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_dynamic_node_scheduler.py", line 738, in run_node_internal
+    raise DynamicNodeFailError(
+    ...<3 lines>...
+    )
+google.adk.workflow._errors.DynamicNodeFailError: Dynamic node root_agent failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/cli/api_server.py", line 2049, in event_generator
+    async for event in agen:
+    ...<25 lines>...
+        yield f"data: {sse_event}\n\n"
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 1147, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 574, in _run_node_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 304, in run_node_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 274, in _run
+    await runner._cleanup_root_task(task, runner.agent.name)  # pylint: disable=protected-access
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 812, in _cleanup_root_task
+    await task
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner_utils.py", line 250, in _drive_root_node
+    raise e.error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 304, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_node_runner.py", line 318, in _run_node_loop
+    async for event in agen:
+      self._track_event_in_context(event, ctx)
+      await self._enqueue_event(event, ctx)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/workflow/_llm_agent_wrapper.py", line 482, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 359, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 437, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 629, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 284, in call_llm_async
+    async for event in agen:
+      yield event
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_model_call.py", line 248, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 679, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 331, in run_and_handle_error
+    raise model_error
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/core/_finalizer.py", line 308, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 239, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 655, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/config/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/functools.py", line 1025, in __get__
+    val = self.func(instance)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 464, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 203, in __get__
+    return per_loop_value(
+        instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 164, in per_loop_value
+    return cache.get(build)
+           ~~~~~~~~~^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 131, in get
+    built = build()
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/utils/_event_loop_cache.py", line 204, in <lambda>
+    instance, f'_per_loop_{self.attrname}', lambda: self.func(instance)
+                                                    ~~~~~~~~~^^^^^^^^^^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 458, in api_client
+    return Client(**kwargs)
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 422, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=resolved_vertexai,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/client.py", line 477, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/config/Desktop/Session1/server-incident-triage/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 834, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: No API key was provided. Please pass a valid API key. Learn how to create an API key at https://ai.google.dev/gemini-api/docs/api-key.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-26 11:40:14,993 - INFO - runners.py:2140 - Closing runner...
+2026-09-26 11:40:14,993 - INFO - runners.py:2153 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28133]
